@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- /WEB-INF/decorators.xml -->
+<decorators defaultdir="/decorator">
+	<decorator name="main" page="decorator.jsp">
+		<pattern>/main/*</pattern>
+		<pattern>/board/*</pattern>
+		<pattern>/user/*</pattern>
+	</decorator>
+	<!-- layout 제외 설정 -->
+	<excludes>
+		<pattern>/board/imgupload*</pattern>
+		<pattern>/main/*</pattern>
+		<pattern>/user/searchid*</pattern>
+		<pattern>/user/id*</pattern>
+		<pattern>/user/searchpw*</pattern>
+		<pattern>/user/pw*</pattern>
+		<pattern>/user/password*</pattern>
+		<pattern>/user/delete*</pattern>
+	</excludes>
+</decorators>
